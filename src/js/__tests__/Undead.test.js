@@ -8,11 +8,11 @@ test('Проверка вывода ошибки при не правильно�
   expect(() => new Undead('Ron', 'Undead')).not.toThrow();
 });
 
-test("Проверка корректного создания экзепляра объекта", () => {
-  const result = new Undead("Ron", "Undead");
+test('Проверка корректного создания экзепляра объекта', () => {
+  const result = new Undead('Ron', 'Undead');
   const expected = {
-    name: "Ron",
-    type: "Undead",
+    name: 'Ron',
+    type: 'Undead',
     health: 100,
     level: 1,
     attack: 25,

@@ -8,11 +8,11 @@ test('Проверка вывода ошибки при не правильно�
   expect(() => new Zombie('Ron', 'Zombie')).not.toThrow();
 });
 
-test("Проверка корректного создания экзепляра объекта", () => {
-  const result = new Zombie("Ron", "Zombie");
+test('Проверка корректного создания экзепляра объекта', () => {
+  const result = new Zombie('Ron', 'Zombie');
   const expected = {
-    name: "Ron",
-    type: "Zombie",
+    name: 'Ron',
+    type: 'Zombie',
     health: 100,
     level: 1,
     attack: 40,

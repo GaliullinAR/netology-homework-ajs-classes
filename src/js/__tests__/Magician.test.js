@@ -8,11 +8,11 @@ test('Проверка коректности ввода типа', () => {
   expect(() => new Magician('Ron', 'Magician')).not.toThrow();
 });
 
-test("Проверка корректного создания экзепляра объекта", () => {
-  const result = new Magician("Ron", "Magician");
+test('Проверка корректного создания экзепляра объекта', () => {
+  const result = new Magician('Ron', 'Magician');
   const expected = {
-    name: "Ron",
-    type: "Magician",
+    name: 'Ron',
+    type: 'Magician',
     health: 100,
     level: 1,
     attack: 10,
