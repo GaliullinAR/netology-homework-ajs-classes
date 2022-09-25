@@ -8,13 +8,10 @@ braches:
 
 cache: node_modules
 
-install: 
-  - npm install
+install: npm install
 
 build: off
 
-build_script: 
-  - npm run build 
+build_script: npm run build 
 
- test_script: 
-  - npm run lint && npm test
+ test_script: npm run lint && npm test
