@@ -10,6 +10,8 @@ test('Проверка правильного ввода данных', () => {
 
 test('Проверка создания экземпляра объекта', () => {
   const result = new Character('Ron', 'Undead');
+  result.attack = 10;
+  result.defence = 40;
   const expected = {
     name: 'Ron',
     type: 'Undead',
@@ -24,6 +26,8 @@ test('Проверка создания экземпляра объекта', ()
 
 test('Проверка метода levelUp', () => {
   const result = new Character('Ron', 'Undead');
+  result.attack = 10;
+  result.defence = 40;
   result.levelUp();
   const expected = {
     name: 'Ron',
@@ -44,6 +48,8 @@ test('Проверка вызова ошибки в методе levelUp', () =>
 
 test('Проверка вызова метода damage', () => {
   const result = new Character('Ron', 'Undead');
+  result.attack = 10;
+  result.defence = 40;
   result.damage(3);
   expect(result.health).toEqual(98.2);
 });
