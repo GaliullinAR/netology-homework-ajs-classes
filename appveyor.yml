@@ -1,0 +1,20 @@
+image: Ubuntu1804
+
+stack: node 16
+
+braches: 
+  only: 
+    - main
+
+cache: node_modules
+
+install: 
+  - npm install
+
+build: off
+
+build_script: 
+  - npm run build 
+
+ test_sctipt: 
+  - npm run lint && npm test
